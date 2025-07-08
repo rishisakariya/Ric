@@ -33,20 +33,23 @@ $conn->close();
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
+      <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
       <div>
-            <h1 align="center">Login Page</h1>
+
             <form action="" method="post">
+                  <h1 align="center">Login Page</h1>
                   <table align="center" border="3 ">
                         <tr>
                               <td>Username</td>
-                              <td><input type="text" name="username" required></td>
+                              <td><input type="text" name="username" placeholder="Enter Your Username" required></td>
                         </tr>
                         <tr>
                               <td>Password</td>
-                              <td><input type="password" name="password" required></td>
+                              <td><input type="password" name="password" placeholder="Enter Your Password" required>
+                              </td>
                         </tr>
                         <tr>
                               <td align="center" colspan=2><input type="submit" name="login" value="login"></td>
