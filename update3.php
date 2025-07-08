@@ -9,10 +9,14 @@ if ($conn->connect_error) {
 
 $a = $_POST['id'];
 $b = $_POST['username'];
+$c = $_POST['fname'];
+$d = $_POST['lname'];
+$e = $_POST['email'];
+$f = $_POST['gender'];
 //$c=$_POST['password'];
-$c = md5($_POST['password']);
+$g = md5($_POST['password']);
 
-$sql = "update register set Username='$b',Password='$c' where id=$a";
+$sql = "update register set Username='$b',fname='$c',lname='$d',email='$e',gender='$f',Password='$g' where id=$a";
 //$conn->query($sql);
 if ($conn->query($sql) == TRUE) {
       //echo"success";
